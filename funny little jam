@@ -1,0 +1,9 @@
+//@title funny little jam @by lghtly_hmmrd
+$: note("<[c,eb,g]!2 [c,f,ab] [d,f,ab]>").arp("0 [0,2] 1 [0,2]").s("gm_pad_halo").chorus(.1).gain(1)
+$: note("<[e,g]!2 [c,f] [c,d]>").s("piano1").gain(1)
+$: note ("c@2").sound('organ_full').bpf(200).bpd(.5).room(2)
+$: note ("[d]!2 [a] [e]").sound('gm_agogo').bpf(500).bpd(.5)
+$: note ("b, c2").sound('wind').bpf(500).begin("<.4 .25 .1 0>/4").bps(0.2)
+$: note("[c2 bb2 eb2]- - g2").s("psaltery_pluck").gain(1).bpf(800)
+$: note("<[c4,eb3,g4]!2 [c4,f4,ab2] [d2,f2,ab2]>").arp("0 [0,2] 1 [0,2]").s("gm_koto").chorus(.1)
+$: s("[bd <hh oh>]*1").beat("0,2,6,8", 16).bank("rolandtr909").dec(.4)
