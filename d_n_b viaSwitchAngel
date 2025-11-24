@@ -1,0 +1,16 @@
+//setGainCurve(x => Math, pow(x,2))
+setCpm(140/4)
+
+//@title d_n_B viaSwAn @by lghtly_hmmrd
+
+$s: stack(
+  s("bd:1") .beat("0,7?,10",16) .duck("3:4:5"),
+  s("sd:2").beat("4,12",16).lpf(1500),
+  s("hh:4!8")).orbit(2).bank("alesishr16").gain(".8")
+._scope()
+$bass: s("supersaw!8")
+  .note("<c# f d# [bb@2 a#2]>/2".sub(12)).orbit(3)
+  .lpenv("2").gain("1.5")
+
+$: note("<[g4 eb4*4] [a#4 e#4*2 a#4 e#4] [f4 f5*2], [c#4*8] [eb f a# eb]*2 a#3 [f3*8]>".sub(12)).sound("gm_banjo").gain(2).adsr("0:.15:0:.5")
+
