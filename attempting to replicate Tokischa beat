@@ -1,0 +1,12 @@
+//@title attempting to replicate Tokischa beat @by lightly_hmmrd
+
+setCpm(115/4)
+
+$: note("[c2 a]") .sound("<gm_blown_bottle zzfx>").beat("0,8,3",16).adsr("0:.15:0:.5").orbit(3).gain(2)
+
+
+$: s("bd, <[- rim]>").beat("0,8,0,2,5", 32)
+
+$: note(" < - [16 27 10]*2> ").sound("triangles").gain(2)
+
+$: note("[fb2@2 fb2] a2*2 c2") .s("z_noise").lpf(300).slow(2).gain(1)
