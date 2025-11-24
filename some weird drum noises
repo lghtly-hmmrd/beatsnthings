@@ -1,0 +1,8 @@
+/@title some weird drum noises @by lghtly_hmmrd
+
+setCpm(140/4)
+
+$: s("<ht*5 sd lt*9 [hh*5 - - ] rim ht>*8").lpf(800)
+$: s("<[bd bd] - - bd bd>*4").bank('korgminipops').lpf(3000).gain(2)
+$: note("[19*4 5*8] 10*4 - 7*2").sound("darbuka").gain()
+_$: note("1 2 3 4 5 6").sound("ace_perc")
