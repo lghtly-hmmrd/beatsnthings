@@ -1,0 +1,7 @@
+//@title playing around with the sample @by lghtly_hmmrd
+setCpm(140/4)
+_$: s("cb*5 rim*3 rim*10 [cp*5 - ] rim*2 rim cb").bank("compurhythm1000").room(2)
+$: s("cb rim rim [cp*5 - ] rim*2 rim cb").bank("compurhythm1000").lpf(square.range(900, 2000))
+_$: s("cb*10 rim*3 rim*10 [cp*5 - ] rim*2 rim cb").bank("compurhythm1000").lpf(5000).delay(.1)
+$: s("bd bd lt [bd*2 - ] bd lt rim").bank("korgddm110")
+$: note("- [e@3,g2,e2]*2 [b3,g3]*2 [-*2 [g3, b3, e4] - ] - g5 a5").sound("piano").lpf("800 2000 5000 1000")
